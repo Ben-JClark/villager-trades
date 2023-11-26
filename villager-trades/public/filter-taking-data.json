@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Emerald",
+    "image": "./items/emerald.webp"
+  },
+  {
+    "name": "Coal",
+    "image": "./items/coal.webp"
+  },
+  {
+    "name": "Paper",
+    "image": "./items/paper.webp"
+  }
+]

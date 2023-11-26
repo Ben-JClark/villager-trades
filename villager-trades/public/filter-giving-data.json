@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Emerald",
+    "image": "./items/emerald.webp"
+  },
+  {
+    "name": "Iron Axe",
+    "image": "./items/iron-axe.webp"
+  }
+]
