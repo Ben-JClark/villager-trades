@@ -5,7 +5,6 @@ interface Props {
 }
 
 function TradeContent({ tradeArray }: Props) {
-  console.log(tradeArray);
   return (
     <>
       <div className="col-sm-9">

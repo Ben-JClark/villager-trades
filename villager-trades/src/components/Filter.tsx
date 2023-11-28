@@ -2,7 +2,12 @@ import { useEffect, useState } from "react";
 import { Item } from "../types/types";
 import FilterItems from "./FilterItems";
 
-function Filter() {
+interface Props {
+  whiteListItem: (itemName: string, direction: "wanted" | "giving") => void;
+  blackListItem: (itemName: string, direction: "wanted" | "giving") => void;
+}
+
+function Filter({ whiteListItem, blackListItem }: Props) {
   // An array of item's that trades take
   const [itemsTakingArray, setItemsTakingArray] = useState<Item[]>([]);
   // An array of item's that trades give
@@ -53,8 +58,18 @@ function Filter() {
 
   return (
     <>
-      <FilterItems filter={"taking"} itemArray={itemsTakingArray} />
-      <FilterItems filter={"giving"} itemArray={itemsGivingArray} />
+      <FilterItems
+        whiteListItem={whiteListItem}
+        blackListItem={blackListItem}
+        direction={"wanted"}
+        itemArray={itemsTakingArray}
+      />
+      <FilterItems
+        whiteListItem={whiteListItem}
+        blackListItem={blackListItem}
+        direction={"giving"}
+        itemArray={itemsGivingArray}
+      />
     </>
   );
 }
