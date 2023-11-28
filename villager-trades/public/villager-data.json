@@ -1,63 +1,37 @@
 [
   {
-    "profession": "Weaposmith",
-    "image": "./villagers/weaponsmith.webp",
-    "workstation": {
-      "name": "Grindstone",
-      "image": "./workstations/grindstone.webp"
-    },
+    "profession": "Weaponsmith",
+    "workstation": "Grindstone",
     "tradeArray": [
       {
         "id": 0,
         "level": "Novice",
         "qtyWanted": "15",
-        "itemWanted": {
-          "name": "Coal",
-          "image": "./items/coal.webp"
-        },
+        "itemWanted": "Coal",
         "qtyGiven": "1",
-        "itemGiven": {
-          "name": "Emerald",
-          "image": "./items/emerald.webp"
-        }
+        "itemGiven": "Emerald"
       },
       {
         "id": 1,
         "level": "Novice",
         "qtyWanted": "3",
-        "itemWanted": {
-          "name": "Emerald",
-          "image": "./items/emerald.webp"
-        },
+        "itemWanted": "Emerald",
         "qtyGiven": "1",
-        "itemGiven": {
-          "name": "Iron Axe",
-          "image": "./items/iron-axe.webp"
-        }
+        "itemGiven": "Emerald"
       }
     ]
   },
   {
     "profession": "Cartographer",
-    "image": "./villagers/cartographer.webp",
-    "workstation": {
-      "name": "Cartography Table",
-      "image": "./workstations/cartography-table.webp"
-    },
+    "workstation": "Cartography Table",
     "tradeArray": [
       {
         "id": 2,
         "level": "Novice",
         "qtyWanted": "24",
-        "itemWanted": {
-          "name": "Paper",
-          "image": "./items/paper.webp"
-        },
+        "itemWanted": "Paper",
         "qtyGiven": "1",
-        "itemGiven": {
-          "name": "Emerald",
-          "image": "./items/emerald.webp"
-        }
+        "itemGiven": "Emerald"
       }
     ]
   }

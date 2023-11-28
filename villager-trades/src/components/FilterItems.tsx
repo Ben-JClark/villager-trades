@@ -1,11 +1,10 @@
-import { Item } from "../types/types";
 import CheckButton from "./CheckButton";
 
 interface Props {
   direction: "wanted" | "giving";
-  itemArray: Item[];
-  whiteListItem: (itemName: string, direction: "wanted" | "giving") => void;
-  blackListItem: (itemName: string, direction: "wanted" | "giving") => void;
+  itemArray: string[];
+  whiteListItem: (item: string, direction: "wanted" | "giving") => void;
+  blackListItem: (item: string, direction: "wanted" | "giving") => void;
 }
 
 function FilterItems({
@@ -23,8 +22,8 @@ function FilterItems({
             {/* <div className="d-flex flex-wrap"> */}
             <div className="form-check form-check-inline">
               {/* item 1 */}
-              {itemArray.map((item: Item) => (
-                <div key={direction + item.name} className="form-check-inline">
+              {itemArray.map((item: string) => (
+                <div key={"1" + direction + item} className="form-check-inline">
                   <CheckButton
                     item={item}
                     direction={direction}

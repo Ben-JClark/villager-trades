@@ -9,26 +9,32 @@ function App() {
   const [whiteListWanted, setwhiteListWanted] = useState<string[]>([]);
 
   // Add an item to the whitelist
-  const whiteListItem = (itemName: string, direction: "wanted" | "giving") => {
+  const whiteListItem = (
+    whitelistItem: string,
+    direction: "wanted" | "giving"
+  ) => {
     if (direction === "giving") {
-      const whiteList: string[] = [...whiteListGiving, itemName];
+      const whiteList: string[] = [...whiteListGiving, whitelistItem];
       setwhiteListGiving(whiteList);
     } else {
-      const whiteList: string[] = [...whiteListWanted, itemName];
+      const whiteList: string[] = [...whiteListWanted, whitelistItem];
       setwhiteListWanted(whiteList);
     }
   };
 
   // Remove an item from the whitelist
-  const blackListItem = (itemName: string, direction: "wanted" | "giving") => {
+  const blackListItem = (
+    blacklistItem: string,
+    direction: "wanted" | "giving"
+  ) => {
     if (direction === "giving") {
       const whiteList: string[] = whiteListGiving.filter((item) => {
-        if (item !== itemName) return true;
+        if (item !== blacklistItem) return true;
       });
       setwhiteListGiving(whiteList);
     } else {
       const whiteList: string[] = whiteListWanted.filter((item) => {
-        if (item !== itemName) return true;
+        if (item !== blacklistItem) return true;
       });
       setwhiteListWanted(whiteList);
     }

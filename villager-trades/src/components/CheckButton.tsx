@@ -1,11 +1,10 @@
-import { Item } from "../types/types";
 import { useState } from "react";
 
 interface Props {
-  item: Item;
+  item: string;
   direction: "wanted" | "giving";
-  whiteListItem: (itemName: string, direction: "wanted" | "giving") => void;
-  blackListItem: (itemName: string, direction: "wanted" | "giving") => void;
+  whiteListItem: (item: string, direction: "wanted" | "giving") => void;
+  blackListItem: (item: string, direction: "wanted" | "giving") => void;
 }
 
 function CheckButton({ item, direction, whiteListItem, blackListItem }: Props) {
@@ -15,9 +14,9 @@ function CheckButton({ item, direction, whiteListItem, blackListItem }: Props) {
     const checked: boolean = !isChecked;
     setIsChecked(checked);
     if (checked) {
-      whiteListItem(item.name, direction);
+      whiteListItem(item, direction);
     } else {
-      blackListItem(item.name, direction);
+      blackListItem(item, direction);
     }
   };
 
@@ -26,7 +25,7 @@ function CheckButton({ item, direction, whiteListItem, blackListItem }: Props) {
       <input
         type="checkbox"
         className="btn-check"
-        id={direction + item.name}
+        id={direction + item}
         autoComplete="off"
         onChange={() => {
           onChange();
@@ -34,17 +33,30 @@ function CheckButton({ item, direction, whiteListItem, blackListItem }: Props) {
       />
       <label
         className="btn btn-outline-success py-0 px-0"
-        htmlFor={direction + item.name}
+        htmlFor={direction + item}
       >
         <img
-          src={item.image}
+          src={getItemSrc(item)}
           className="img-fluid"
           style={{ width: "30px" }}
-          alt={item.name}
+          alt={item}
         />
       </label>
     </>
   );
+}
+
+/**
+ * Takes an item name and returns the filepath of the item in the public directory
+ * @param item the name of the item
+ * @returns the public directory filepath to the image
+ */
+function getItemSrc(item: string): string {
+  let src: string;
+  src = item.toLowerCase();
+  src = src.replace(" ", "-");
+  src = "./items/" + src + ".webp";
+  return src;
 }
 
 export default CheckButton;

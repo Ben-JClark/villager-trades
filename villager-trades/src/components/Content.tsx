@@ -24,25 +24,16 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
         const readInVillagerData = villagerData.map((villager: Villager) => {
           return {
             profession: villager.profession,
-            image: villager.image,
-            workstation: {
-              name: villager.workstation.name,
-              image: villager.workstation.image,
-            },
+            workstation: villager.workstation,
             tradeArray: villager.tradeArray.map((trade: Trade) => ({
               ...trade,
               id: trade.id,
               level: trade.level,
               qtyWanted: trade.qtyWanted,
-              itemWanted: {
-                name: trade.itemWanted.name,
-                image: trade.itemWanted.image,
-              },
+              itemWanted: trade.itemWanted,
+
               qtyGiven: trade.qtyGiven,
-              itemGiven: {
-                name: trade.itemGiven.name,
-                image: trade.itemGiven.image,
-              },
+              itemGiven: trade.itemGiven,
             })),
           };
         });
@@ -74,10 +65,10 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
       const filteredTradeArray = villager.tradeArray.filter((trade) => {
         // Check if the trade has a whitelisted giving or taking item
         const givingMatch = whiteListGiving.some((whiteListItem: string) => {
-          if (whiteListItem === trade.itemGiven.name) return true;
+          if (whiteListItem === trade.itemGiven) return true;
         });
         const wantedMatch = whiteListWanted.some((whiteListItem: string) => {
-          if (whiteListItem === trade.itemWanted.name) return true;
+          if (whiteListItem === trade.itemWanted) return true;
         });
         return givingMatch || wantedMatch;
       });

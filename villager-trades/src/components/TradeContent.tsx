@@ -13,8 +13,8 @@ function TradeContent({ tradeArray }: Props) {
           tradeArray.map((trade: Trade) => (
             <div key={trade.id} className="row">
               <p>
-                {trade.level} {trade.qtyWanted} {trade.itemWanted.name} for{" "}
-                {trade.qtyGiven} {trade.itemGiven.name}
+                {trade.level} {trade.qtyWanted} {trade.itemWanted} for{" "}
+                {trade.qtyGiven} {trade.itemGiven}
               </p>
             </div>
           ))

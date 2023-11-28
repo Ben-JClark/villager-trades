@@ -15,7 +15,7 @@ function VillagerContent({ villager }: Props) {
           {/* Villgaer image row */}
           <div className="row">
             <img
-              src={villager.image}
+              src={getVillagerSrc(villager.profession)}
               className="img-fluid"
               style={{ width: "120px" }}
             ></img>
@@ -23,7 +23,7 @@ function VillagerContent({ villager }: Props) {
           {/* Stone cutter image row */}
           <div className="row">
             <img
-              src={villager.workstation.image}
+              src={getWorkstationSrc(villager.workstation)}
               className="img-fluid"
               style={{ width: "120px" }}
             ></img>
@@ -34,6 +34,22 @@ function VillagerContent({ villager }: Props) {
       </div>
     </>
   );
+}
+
+function getWorkstationSrc(workstation: string): string {
+  let src: string;
+  src = workstation.toLowerCase();
+  src = src.replace(" ", "-");
+  src = "./workstations/" + src + ".webp";
+  return src;
+}
+
+function getVillagerSrc(profession: string): string {
+  let src: string;
+  src = profession.toLowerCase();
+  src = src.replace(" ", "-");
+  src = "./villagers/" + src + ".webp";
+  return src;
 }
 
 export default VillagerContent;

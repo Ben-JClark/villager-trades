@@ -1,7 +1,7 @@
 export type Villager = {
   profession: string;
   image: string;
-  workstation: Workstation;
+  workstation: string;
   tradeArray: Trade[];
 };
 
@@ -14,12 +14,7 @@ export type Trade = {
   id: number;
   level: string;
   qtyWanted: string;
-  itemWanted: Item;
+  itemWanted: string;
   qtyGiven: string;
-  itemGiven: Item;
-};
-
-export type Item = {
-  name: string;
-  image: string;
+  itemGiven: string;
 };
