@@ -1,4 +1,4 @@
-import CheckButton from "./CheckButton";
+import FilterButton from "./FilterButton";
 
 interface Props {
   direction: "wanted" | "giving";
@@ -24,7 +24,7 @@ function FilterItems({
               {/* item 1 */}
               {itemArray.map((item: string) => (
                 <div key={"1" + direction + item} className="form-check-inline">
-                  <CheckButton
+                  <FilterButton
                     item={item}
                     direction={direction}
                     whiteListItem={whiteListItem}

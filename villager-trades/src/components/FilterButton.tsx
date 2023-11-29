@@ -7,7 +7,12 @@ interface Props {
   blackListItem: (item: string, direction: "wanted" | "giving") => void;
 }
 
-function CheckButton({ item, direction, whiteListItem, blackListItem }: Props) {
+function FilterButton({
+  item,
+  direction,
+  whiteListItem,
+  blackListItem,
+}: Props) {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   const onChange = () => {
@@ -59,4 +64,5 @@ function getItemSrc(item: string): string {
   return src;
 }
 
-export default CheckButton;
+export { getItemSrc };
+export default FilterButton;

@@ -1,4 +1,4 @@
-import VillagerContent from "./VillagerContent";
+import VillagerDisplay from "./VillagerDisplay";
 import { useEffect, useState } from "react";
 import { Villager, Trade } from "../types/types";
 
@@ -95,7 +95,7 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
           /* Display all the villagers in villagerData */
           filteredVillagerArray.map((villager: Villager) => (
             <div key={villager.profession} className="col-md-3">
-              <VillagerContent villager={villager} />
+              <VillagerDisplay villager={villager} />
             </div>
           ))
         }

@@ -1,11 +1,11 @@
-import TradeContent from "./TradeContent";
+import TradeDisplay from "./TradeDisplay";
 import { Villager } from "../types/types";
 
 interface Props {
   villager: Villager;
 }
 
-function VillagerContent({ villager }: Props) {
+function VillagerDisplay({ villager }: Props) {
   return (
     <>
       {/* VillagerContent */}
@@ -30,7 +30,7 @@ function VillagerContent({ villager }: Props) {
           </div>
         </div>
         {/* Display the list of trades */}
-        <TradeContent tradeArray={villager.tradeArray} />
+        <TradeDisplay tradeArray={villager.tradeArray} />
       </div>
     </>
   );
@@ -52,4 +52,4 @@ function getVillagerSrc(profession: string): string {
   return src;
 }
 
-export default VillagerContent;
+export default VillagerDisplay;

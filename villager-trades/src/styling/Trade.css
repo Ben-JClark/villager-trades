@@ -1,0 +1,28 @@
+/* Trade background image */
+.trade-style {
+  background-image: url("./gui/trade-bar-gradient.webp");
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 1px;
+}
+
+@font-face {
+  font-family: minecraft-regular;
+  src: url("./fonts/minecraft-regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.img-style {
+  min-width: 32px !important;
+}
+
+.qty-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: minecraft-regular, sans-serif;
+  color: white;
+  font-size: large;
+}
