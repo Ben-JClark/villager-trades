@@ -3,44 +3,48 @@ import { getItemSrc } from "./FilterButton";
 import "../styling/Trade.css";
 
 interface Props {
+  profession: string;
   tradeArray: Trade[];
 }
 
-function TradeDisplay({ tradeArray }: Props) {
+function TradeDisplay({ tradeArray, profession }: Props) {
+  console.log("displaying trades");
+  console.log(tradeArray);
   return (
     <>
-      <div className="col-sm-9">
-        {
-          /* Display all the villager trades in seperate rows */
-          tradeArray.map((trade: Trade) => (
-            <div key={trade.id} className="row trade-style">
-              <div className="col qty-style">{trade.qtyWanted}</div>
-              <div className="col">
-                <img
-                  className="img-fluid img-style"
-                  src={getItemSrc(trade.itemWanted)}
-                  alt={trade.itemWanted}
-                ></img>
-              </div>
-              <div className="col">
-                <img
-                  className="img-fluid img-style"
-                  src={"./gui/trade-arrow.webp"}
-                  alt={"Right Arrow"}
-                ></img>
-              </div>
-              <div className="col">
-                <img
-                  className="img-fluid img-style"
-                  src={getItemSrc(trade.itemGiven)}
-                  alt={trade.itemGiven}
-                ></img>
-              </div>
-              <div className="col qty-style">{trade.qtyGiven}</div>
+      {
+        /* Display all the villager trades in seperate rows */
+        tradeArray.map((trade: Trade) => (
+          <div
+            key={profession + trade.itemWanted + trade.itemGiven}
+            className="row trade-style"
+          >
+            <div className="col qty-style">{trade.qtyWanted}</div>
+            <div className="col">
+              <img
+                className="img-fluid img-style"
+                src={getItemSrc(trade.itemWanted)}
+                alt={trade.itemWanted}
+              ></img>
             </div>
-          ))
-        }
-      </div>
+            <div className="col">
+              <img
+                className="img-fluid img-style"
+                src={"./gui/trade-arrow.webp"}
+                alt={"Right Arrow"}
+              ></img>
+            </div>
+            <div className="col">
+              <img
+                className="img-fluid img-style"
+                src={getItemSrc(trade.itemGiven)}
+                alt={trade.itemGiven}
+              ></img>
+            </div>
+            <div className="col qty-style">{trade.qtyGiven}</div>
+          </div>
+        ))
+      }
     </>
   );
 }

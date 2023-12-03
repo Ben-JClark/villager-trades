@@ -60,7 +60,7 @@ function getItemSrc(item: string): string {
   let src: string;
   src = item.toLowerCase();
   src = src.replace(" ", "-");
-  src = "./items/" + src + ".webp";
+  src = "./items/" + src + ".png";
   return src;
 }
 

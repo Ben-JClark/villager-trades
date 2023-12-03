@@ -2,7 +2,7 @@ export type Villager = {
   profession: string;
   image: string;
   workstation: string;
-  tradeArray: Trade[];
+  levels: Level[];
 };
 
 export type Workstation = {
@@ -10,6 +10,19 @@ export type Workstation = {
   image: string;
 };
 
+export type Level = {
+  level: "Novice" | "Apprentice" | "Journeyman" | "Expert" | "Master";
+  trades: Trade[];
+};
+
+export type Trade = {
+  qtyWanted: string;
+  itemWanted: string;
+  qtyGiven: string;
+  itemGiven: string;
+};
+
+/*
 export type Trade = {
   id: number;
   level: string;
@@ -18,3 +31,4 @@ export type Trade = {
   qtyGiven: string;
   itemGiven: string;
 };
+*/

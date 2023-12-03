@@ -1,11 +1,14 @@
 import TradeDisplay from "./TradeDisplay";
-import { Villager } from "../types/types";
+import { Villager, Level } from "../types/types";
+import LevelDisplay from "./LevelDisplay";
 
 interface Props {
   villager: Villager;
 }
 
 function VillagerDisplay({ villager }: Props) {
+  console.log("displaying villager");
+  console.log(villager);
   return (
     <>
       {/* VillagerContent */}
@@ -28,12 +31,33 @@ function VillagerDisplay({ villager }: Props) {
               style={{ width: "120px" }}
             ></img>
           </div>
+          <div className="row">
+            <img
+              src={getRecipeSrc(villager.workstation)}
+              className="img-fluid"
+              style={{ width: "120px" }}
+            ></img>
+          </div>
         </div>
+        {/*  */}
         {/* Display the list of trades */}
-        <TradeDisplay tradeArray={villager.tradeArray} />
+        <div className="col-sm-9">
+          <LevelDisplay
+            profession={villager.profession}
+            levels={villager.levels}
+          />
+        </div>
       </div>
     </>
   );
+}
+
+function getRecipeSrc(workstation: string): string {
+  let src: string;
+  src = workstation.toLowerCase();
+  src = src.replace(" ", "-");
+  src = "./recipes/" + src + "-recipe.webp";
+  return src;
 }
 
 function getWorkstationSrc(workstation: string): string {

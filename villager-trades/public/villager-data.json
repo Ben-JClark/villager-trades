@@ -2,36 +2,40 @@
   {
     "profession": "Weaponsmith",
     "workstation": "Grindstone",
-    "tradeArray": [
+    "levels": [
       {
-        "id": 0,
-        "level": "Novice",
-        "qtyWanted": "15",
-        "itemWanted": "Coal",
-        "qtyGiven": "1",
-        "itemGiven": "Emerald"
+        "level": "novice",
+        "trades": [
+          {
+            "qtyWanted": "15",
+            "itemWanted": "Coal",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Axe"
+          },
+          {
+            "qtyWanted": "7-21",
+            "itemWanted": "Iron Sword",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
       },
       {
-        "id": 1,
-        "level": "Novice",
-        "qtyWanted": "3",
-        "itemWanted": "Emerald",
-        "qtyGiven": "1",
-        "itemGiven": "Iron Axe"
-      }
-    ]
-  },
-  {
-    "profession": "Cartographer",
-    "workstation": "Cartography Table",
-    "tradeArray": [
-      {
-        "id": 2,
-        "level": "Novice",
-        "qtyWanted": "24",
-        "itemWanted": "Paper",
-        "qtyGiven": "1",
-        "itemGiven": "Emerald"
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Iron Ingot",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
       }
     ]
   }
