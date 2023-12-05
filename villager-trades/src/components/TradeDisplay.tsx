@@ -19,29 +19,29 @@ function TradeDisplay({ tradeArray, profession }: Props) {
             key={profession + trade.itemWanted + trade.itemGiven}
             className="row trade-style"
           >
-            <div className="col qty-style">{trade.qtyWanted}</div>
-            <div className="col">
+            <div className="col-sm-3 qty-style">{trade.qtyWanted}</div>
+            <div className="col-sm-3">
               <img
                 className="img-fluid img-style"
                 src={getItemSrc(trade.itemWanted)}
                 alt={trade.itemWanted}
               ></img>
             </div>
-            <div className="col">
+            <div className="col-sm-2">
               <img
                 className="img-fluid img-style"
                 src={"./gui/trade-arrow.webp"}
                 alt={"Right Arrow"}
               ></img>
             </div>
-            <div className="col">
+            <div className="col-sm-3">
               <img
                 className="img-fluid img-style"
                 src={getItemSrc(trade.itemGiven)}
                 alt={trade.itemGiven}
               ></img>
             </div>
-            <div className="col qty-style">{trade.qtyGiven}</div>
+            <div className="col-sm-1 qty-style">{trade.qtyGiven}</div>
           </div>
         ))
       }

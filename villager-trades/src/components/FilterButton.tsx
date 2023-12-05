@@ -59,7 +59,8 @@ function FilterButton({
 function getItemSrc(item: string): string {
   let src: string;
   src = item.toLowerCase();
-  src = src.replace(" ", "-");
+  // Replace all spaces
+  src = src.replace(/ /g, "-");
   src = "./items/" + src + ".png";
   return src;
 }

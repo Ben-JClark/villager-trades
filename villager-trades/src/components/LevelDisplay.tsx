@@ -13,7 +13,7 @@ function LevelDisplay({ profession, levels }: Props) {
   return (
     <>
       {levels.map((level: Level) => (
-        <div key={profession + level} className="row">
+        <div key={profession + level.level} className="row">
           <div className="col-sm-3 level-style">{level.level}</div>
           <div className="col-sm-9">
             <TradeDisplay profession={profession} tradeArray={level.trades} />

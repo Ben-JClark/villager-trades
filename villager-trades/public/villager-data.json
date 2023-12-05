@@ -20,9 +20,9 @@
           },
           {
             "qtyWanted": "7-21",
-            "itemWanted": "Iron Sword",
+            "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Emerald"
+            "itemGiven": "Iron Sword"
           }
         ]
       },
@@ -34,6 +34,1419 @@
             "itemWanted": "Iron Ingot",
             "qtyGiven": "1",
             "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "36",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Bell"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "24",
+            "itemWanted": "Flint",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Diamond",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "17-31",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Axe"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "13-27",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Sword"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Cartographer",
+    "workstation": "Cartography Table",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "24",
+            "itemWanted": "Paper",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "7",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Empty Map"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "11",
+            "itemWanted": "Glass Pane",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "13",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Ocean Explorer Map"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Compass",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "14",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Woodland Explorer Map"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "7",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Item Frame"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Banner"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "8",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Globe Banner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Butcher",
+    "workstation": "Smoker",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "14",
+            "itemWanted": "Raw Chicken",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Raw Rabbit",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "7",
+            "itemWanted": "Raw Porkchop",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Rabbit Stew"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "15",
+            "itemWanted": "Coal",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "8",
+            "itemGiven": "Cooked Chicken"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "5",
+            "itemGiven": "Cooked Porkchop"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "10",
+            "itemWanted": "Raw Beef",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "7",
+            "itemWanted": "Raw Mutton",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "10",
+            "itemWanted": "Kelp Block",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "10",
+            "itemWanted": "Sweet Berries",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Cleric",
+    "workstation": "Brewing Stand",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "32",
+            "itemWanted": "Rotten Flesh",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "2",
+            "itemGiven": "Redstone Dust"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Gold Ingot",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Lapis Lazuli"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "2",
+            "itemWanted": "Rabbit Foot",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Glowstone"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Scute",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "9",
+            "itemWanted": "Glass Bottle",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Ender Pearl"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "22",
+            "itemWanted": "Nether Wart",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Experience Bottle"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Fisherman",
+    "workstation": "Barrel",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "20",
+            "itemWanted": "String",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "10",
+            "itemWanted": "Coal",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "6",
+            "itemWanted": "Raw Cod",
+            "qtyGiven": "6",
+            "itemGiven": "Cooked Cod"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Cod Bucket"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "15",
+            "itemWanted": "Raw Cod",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "6",
+            "itemWanted": "Raw Salmon",
+            "qtyGiven": "6",
+            "itemGiven": "Cooked Salmon"
+          },
+          {
+            "qtyWanted": "2",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Campfire"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "13",
+            "itemWanted": "Raw Salmon",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "8-22",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Fishing Rod"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "6",
+            "itemWanted": "Tropical Fish",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Pufferfish",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Any Colour Boat",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Fletcher",
+    "workstation": "Fletching Table",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "32",
+            "itemWanted": "Stick",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "16",
+            "itemGiven": "Arrow"
+          },
+          {
+            "qtyWanted": "10",
+            "itemWanted": "Gravel",
+            "qtyGiven": "10",
+            "itemGiven": "Flint"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "26",
+            "itemWanted": "Flint",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "2",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Bow"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "14",
+            "itemWanted": "String",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Crossbow"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "24",
+            "itemWanted": "Feather",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "7-21",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Bow"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "8",
+            "itemWanted": "Tripwire Hook",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "8-22",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Crossbow"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Arrow",
+            "qtyGiven": "5",
+            "itemGiven": "Tipped Arrow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Leatherworker",
+    "workstation": "Cauldron",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "6",
+            "itemWanted": "Leather",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Leather Pants"
+          },
+          {
+            "qtyWanted": "7",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Leather Tunic"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "26",
+            "itemWanted": "Flint",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Leather Cap"
+          },
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Leather Boots"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "9",
+            "itemWanted": "Rabbit Hide",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "7",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Leather Tunic"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Scute",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "6",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Leather Horse Armor"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "6",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Saddle"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Leather Cap"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Farmer",
+    "workstation": "Composter",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "20",
+            "itemWanted": "Wheat",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "26",
+            "itemWanted": "Potato",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "22",
+            "itemWanted": "Carrot",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "15",
+            "itemWanted": "Beetroot",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "6",
+            "itemGiven": "Bread"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "6",
+            "itemWanted": "Pumpkin",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Pumpkin Pie"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Apple"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Melon",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "18",
+            "itemGiven": "Cookie"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Cake"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Suspicious Stew"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "3",
+            "itemGiven": "Golden Carrot"
+          },
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Emerald",
+            "qtyGiven": "3",
+            "itemGiven": "Glistering Melon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Librarian",
+    "workstation": "Lectern",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "24",
+            "itemWanted": "Paper",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "9",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Bookshelf"
+          },
+          {
+            "qtyWanted": "5-64",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Enchanted Book"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Book",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Lantern"
+          },
+          {
+            "qtyWanted": "5-64",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Enchanted Book"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Ink Sac",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Glass"
+          },
+          {
+            "qtyWanted": "5-64",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Enchanted Book"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "2",
+            "itemWanted": "Book and Quill",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Compass"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Clock"
+          },
+          {
+            "qtyWanted": "5-64",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Enchanted Book"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "20",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Name Tag"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Toolsmith",
+    "workstation": "Smithing Table",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "15",
+            "itemWanted": "Coal",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Stone Axe"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Stone Pickaxe"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Stone Shovel"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Stone Hoe"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Iron Ingot",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "36",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Bell"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "30",
+            "itemWanted": "Flint",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "6-20",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Axe"
+          },
+          {
+            "qtyWanted": "7-21",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Pickaxe"
+          },
+          {
+            "qtyWanted": "8-22",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Shovel"
+          },
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Hoe"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Diamond",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "17-31",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Axe"
+          },
+          {
+            "qtyWanted": "10-24",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Shovel"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "18-32",
+            "itemWanted": "emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Pickaxe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Armorer",
+    "workstation": "Blast Furnace",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "15",
+            "itemWanted": "Coal",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Helmet"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Chestplate"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Leggings"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Iron Boots"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Iron Ingot",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "36",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Bell"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Chainmail Leggings"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Chainmail Boots"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Lava Bucket",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Diamond",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Chainmail Helmet"
+          },
+          {
+            "qtyWanted": "4",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Chainmail Chestplate"
+          },
+          {
+            "qtyWanted": "5",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Shield"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "19-33",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Leggings"
+          },
+          {
+            "qtyWanted": "13-27",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Boots"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "13-27",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Helmet"
+          },
+          {
+            "qtyWanted": "21-35",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Diamond Chestplate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Mason",
+    "workstation": "Stonecutter",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "10",
+            "itemWanted": "Clay",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "10",
+            "itemGiven": "Brick"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "20",
+            "itemWanted": "Stone",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Chiseled Stone"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "16",
+            "itemWanted": "Andesite",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "16",
+            "itemWanted": "Diorite",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "16",
+            "itemWanted": "Granite",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Polished Andesite"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Polished Diorite"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Polished Granite"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Dripstone Block"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Nether Quartz",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Coloured Terracotta"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "4",
+            "itemGiven": "Glazed Terracotta"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Quartz Block"
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Quartz Pillar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profession": "Shepherd",
+    "workstation": "Loom",
+    "levels": [
+      {
+        "level": "Novice",
+        "trades": [
+          {
+            "qtyWanted": "18",
+            "itemWanted": "White Wool",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "18",
+            "itemWanted": "Brown Wool",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "18",
+            "itemWanted": "Black Wool",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "18",
+            "itemWanted": "Gray Wool",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "2",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Shears"
+          }
+        ]
+      },
+      {
+        "level": "Apprentice",
+        "trades": [
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Any Colour Wool",
+            "qtyGiven": "1",
+            "itemGiven": ""
+          },
+          {
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Any Color Carpet"
+          }
+        ]
+      },
+      {
+        "level": "Journeyman",
+        "trades": [
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Red Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Light Gray Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Pink Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Yellow Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Orange Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Any Color Bed"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "trades": [
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Green Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Brown Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Blue Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Purple Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Cyan Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "12",
+            "itemWanted": "Magenta Dye",
+            "qtyGiven": "1",
+            "itemGiven": "Emerald"
+          },
+          {
+            "qtyWanted": "3",
+            "itemWanted": "Emerald",
+            "qtyGiven": "1",
+            "itemGiven": "Any Color Banner"
+          }
+        ]
+      },
+      {
+        "level": "Master",
+        "trades": [
+          {
+            "qtyWanted": "2",
+            "itemWanted": "Emerald",
+            "qtyGiven": "3",
+            "itemGiven": "Painting"
           }
         ]
       }
