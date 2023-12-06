@@ -32,8 +32,11 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
                 ...trade,
                 qtyWanted: trade.qtyWanted,
                 itemWanted: trade.itemWanted,
+                itemWantedGif: trade.itemWantedGif || false,
                 qtyGiven: trade.qtyGiven,
                 itemGiven: trade.itemGiven,
+                itemGivenGif: trade.itemGivenGif || false,
+                Notes: trade.Notes || "",
               })),
             })),
           };

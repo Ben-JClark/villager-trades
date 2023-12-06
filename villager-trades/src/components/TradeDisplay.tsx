@@ -1,5 +1,4 @@
 import { Trade } from "../types/types";
-import { getItemSrc } from "./FilterButton";
 import "../styling/Trade.css";
 
 interface Props {
@@ -23,7 +22,7 @@ function TradeDisplay({ tradeArray, profession }: Props) {
             <div className="col-sm-3">
               <img
                 className="img-fluid img-style"
-                src={getItemSrc(trade.itemWanted)}
+                src={getItemSrc(trade.itemWanted, trade.itemWantedGif)}
                 alt={trade.itemWanted}
               ></img>
             </div>
@@ -37,7 +36,7 @@ function TradeDisplay({ tradeArray, profession }: Props) {
             <div className="col-sm-3">
               <img
                 className="img-fluid img-style"
-                src={getItemSrc(trade.itemGiven)}
+                src={getItemSrc(trade.itemGiven, trade.itemGivenGif)}
                 alt={trade.itemGiven}
               ></img>
             </div>
@@ -47,6 +46,22 @@ function TradeDisplay({ tradeArray, profession }: Props) {
       }
     </>
   );
+}
+
+/**
+ * Takes an item name and returns the filepath of the item in the public directory
+ * @param item the name of the item
+ * @returns the public directory filepath to the image
+ */
+function getItemSrc(item: string, isGif: boolean): string {
+  let src: string;
+  src = item.toLowerCase();
+  // Replace all spaces
+  src = src.replace(/ /g, "-");
+  src = "./items/" + src;
+  if (isGif) src = src + ".gif";
+  else src = src + ".png";
+  return src;
 }
 
 export default TradeDisplay;

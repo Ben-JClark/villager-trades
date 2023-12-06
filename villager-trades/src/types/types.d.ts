@@ -18,17 +18,9 @@ export type Level = {
 export type Trade = {
   qtyWanted: string;
   itemWanted: string;
+  itemWantedGif: boolean;
   qtyGiven: string;
   itemGiven: string;
+  itemGivenGif: boolean;
+  Notes: string;
 };
-
-/*
-export type Trade = {
-  id: number;
-  level: string;
-  qtyWanted: string;
-  itemWanted: string;
-  qtyGiven: string;
-  itemGiven: string;
-};
-*/

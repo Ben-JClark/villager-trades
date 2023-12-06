@@ -152,7 +152,9 @@
             "qtyWanted": "3",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Banner"
+            "itemGiven": "Coloured Banner",
+            "itemGivenGif": true,
+            "Notes": "16 differnt blank banner colours can be offered"
           }
         ]
       },
@@ -458,9 +460,11 @@
           },
           {
             "qtyWanted": "1",
-            "itemWanted": "Any Colour Boat",
+            "itemWanted": "Boat",
+            "itemWantedGif": true,
             "qtyGiven": "1",
-            "itemGiven": "Emerald"
+            "itemGiven": "Emerald",
+            "Notes": "Plains villagers buy oak boats, taiga and snowy villagers buy spruce boats, desert and jungle villagers buy jungle boats, savanna villagers buy acacia boats, and swamp villagers buy dark oak boats."
           }
         ]
       }
@@ -1266,13 +1270,17 @@
             "qtyWanted": "1",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Coloured Terracotta"
+            "itemGiven": "Coloured Terracotta",
+            "itemGivenGif": true,
+            "Notes": "1 of 16 Coloured or Glazed Terracotta blocks is offered"
           },
           {
             "qtyWanted": "1",
             "itemWanted": "Emerald",
             "qtyGiven": "4",
-            "itemGiven": "Glazed Terracotta"
+            "itemGiven": "Glazed Terracotta",
+            "itemGivenGif": true,
+            "Notes": "1 of 16 Coloured or Glazed Terracotta blocks is offered"
           }
         ]
       },
@@ -1339,15 +1347,19 @@
         "trades": [
           {
             "qtyWanted": "1",
-            "itemWanted": "Any Colour Wool",
+            "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": ""
+            "itemGiven": "Coloured Wool",
+            "itemGivenGif": true,
+            "Notes": "One of 16 coloured wool blocks are offered"
           },
           {
             "qtyWanted": "1",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Any Color Carpet"
+            "itemGiven": "Coloured Carpet",
+            "itemGivenGif": true,
+            "Notes": "1 of 16 carpet colours is offered"
           }
         ]
       },
@@ -1388,7 +1400,9 @@
             "qtyWanted": "3",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Any Color Bed"
+            "itemGiven": "Coloured Bed",
+            "itemGivenGif": true,
+            "Notes": "1 of 16 carpet colours is offered"
           }
         ]
       },
@@ -1435,7 +1449,9 @@
             "qtyWanted": "3",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Any Color Banner"
+            "itemGiven": "Coloured Banner",
+            "itemGivenGif": true,
+            "Notes": "16 differnt blank banner colours can be offered"
           }
         ]
       },
