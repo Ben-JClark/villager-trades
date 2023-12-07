@@ -590,13 +590,13 @@
             "qtyWanted": "3",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Leather Pants"
+            "itemGiven": "Coloured Leather Pants"
           },
           {
             "qtyWanted": "7",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Leather Tunic"
+            "itemGiven": "Coloured Leather Tunic"
           }
         ]
       },
@@ -613,13 +613,13 @@
             "qtyWanted": "5",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Leather Cap"
+            "itemGiven": "Coloured Leather Cap"
           },
           {
             "qtyWanted": "4",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Leather Boots"
+            "itemGiven": "Coloured Leather Boots"
           }
         ]
       },
@@ -636,7 +636,7 @@
             "qtyWanted": "7",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Leather Tunic"
+            "itemGiven": "Coloured Leather Tunic"
           }
         ]
       },
@@ -670,7 +670,7 @@
             "qtyWanted": "5",
             "itemWanted": "Emerald",
             "qtyGiven": "1",
-            "itemGiven": "Leather Cap"
+            "itemGiven": "Coloured Leather Cap"
           }
         ]
       }
