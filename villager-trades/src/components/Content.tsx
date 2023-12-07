@@ -33,6 +33,8 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
                 qtyWanted: trade.qtyWanted,
                 itemWanted: trade.itemWanted,
                 itemWantedGif: trade.itemWantedGif || false,
+                secQtyWanted: trade.secQtyWanted || "0",
+                secItemWanted: trade.secItemWanted || "",
                 qtyGiven: trade.qtyGiven,
                 itemGiven: trade.itemGiven,
                 itemGivenGif: trade.itemGivenGif || false,

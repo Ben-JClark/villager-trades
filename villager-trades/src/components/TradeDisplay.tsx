@@ -18,14 +18,37 @@ function TradeDisplay({ tradeArray, profession }: Props) {
             key={profession + trade.itemWanted + trade.itemGiven}
             className="row trade-style"
           >
-            <div className="col-sm-3 qty-style">{trade.qtyWanted}</div>
-            <div className="col-sm-3">
-              <img
-                className="img-fluid img-style"
-                src={getItemSrc(trade.itemWanted, trade.itemWantedGif)}
-                alt={trade.itemWanted}
-              ></img>
+            {/* Display the first and second qty wanted */}
+            <div className="col-sm-5 qty-style">
+              <div className="row">
+                {/* First item watned */}
+                <div className="row">
+                  <div className="col-sm-7">{trade.qtyWanted}</div>
+                  <div className="col-sm-5">
+                    <img
+                      className="img-style"
+                      src={getItemSrc(trade.itemWanted, trade.itemWantedGif)}
+                      alt={trade.itemWanted}
+                    ></img>
+                  </div>
+                </div>
+
+                {/* Second item watned if qty is not 0*/}
+                {trade.secQtyWanted !== "0" ? (
+                  <div className="row">
+                    <div className="col-sm-7">{trade.secQtyWanted}</div>
+                    <div className="col-sm-5">
+                      <img
+                        className="img-style"
+                        src={getItemSrc(trade.secItemWanted, false)}
+                        alt={trade.secItemWanted}
+                      ></img>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
             </div>
+
             <div className="col-sm-2">
               <img
                 className="img-fluid img-style"

@@ -117,6 +117,8 @@
           {
             "qtyWanted": "13",
             "itemWanted": "Emerald",
+            "secQtyWanted": "1",
+            "secItemWanted": "Compass",
             "qtyGiven": "1",
             "itemGiven": "Ocean Explorer Map"
           }
@@ -134,6 +136,8 @@
           {
             "qtyWanted": "14",
             "itemWanted": "Emerald",
+            "secQtyWanted": "1",
+            "secItemWanted": "Compass",
             "qtyGiven": "1",
             "itemGiven": "Woodland Explorer Map"
           }
@@ -385,8 +389,10 @@
             "itemGiven": "Emerald"
           },
           {
-            "qtyWanted": "6",
-            "itemWanted": "Raw Cod",
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "secQtyWanted": "6",
+            "secItemWanted": "Raw Cod",
             "qtyGiven": "6",
             "itemGiven": "Cooked Cod"
           },
@@ -408,8 +414,10 @@
             "itemGiven": "Emerald"
           },
           {
-            "qtyWanted": "6",
-            "itemWanted": "Raw Salmon",
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "secQtyWanted": "6",
+            "secItemWanted": "Raw Salmon",
             "qtyGiven": "6",
             "itemGiven": "Cooked Salmon"
           },
@@ -490,8 +498,10 @@
             "itemGiven": "Arrow"
           },
           {
-            "qtyWanted": "10",
-            "itemWanted": "Gravel",
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "secQtyWanted": "10",
+            "secItemWanted": "Gravel",
             "qtyGiven": "10",
             "itemGiven": "Flint"
           }
@@ -564,8 +574,10 @@
             "itemGiven": "Crossbow"
           },
           {
-            "qtyWanted": "5",
-            "itemWanted": "Arrow",
+            "qtyWanted": "1",
+            "itemWanted": "Emerald",
+            "secQtyWanted": "5",
+            "secItemWanted": "Arrow",
             "qtyGiven": "5",
             "itemGiven": "Tipped Arrow"
           }
@@ -813,6 +825,8 @@
           {
             "qtyWanted": "5-64",
             "itemWanted": "Emerald",
+            "secQtyWanted": "1",
+            "secItemWanted": "Book",
             "qtyGiven": "1",
             "itemGiven": "Enchanted Book"
           }
@@ -836,6 +850,8 @@
           {
             "qtyWanted": "5-64",
             "itemWanted": "Emerald",
+            "secQtyWanted": "1",
+            "secItemWanted": "Book",
             "qtyGiven": "1",
             "itemGiven": "Enchanted Book"
           }
@@ -859,6 +875,8 @@
           {
             "qtyWanted": "5-64",
             "itemWanted": "Emerald",
+            "secQtyWanted": "1",
+            "secItemWanted": "Book",
             "qtyGiven": "1",
             "itemGiven": "Enchanted Book"
           }
@@ -888,6 +906,8 @@
           {
             "qtyWanted": "5-64",
             "itemWanted": "Emerald",
+            "secQtyWanted": "1",
+            "secItemWanted": "Book",
             "qtyGiven": "1",
             "itemGiven": "Enchanted Book"
           }

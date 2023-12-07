@@ -19,6 +19,8 @@ export type Trade = {
   qtyWanted: string;
   itemWanted: string;
   itemWantedGif: boolean;
+  secQtyWanted: string;
+  secItemWanted: string;
   qtyGiven: string;
   itemGiven: string;
   itemGivenGif: boolean;
