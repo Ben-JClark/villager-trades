@@ -26,3 +26,8 @@ export type Trade = {
   itemGivenGif: boolean;
   Notes: string;
 };
+
+export type TradingItem = {
+  name: string;
+  direction: "wanted" | "giving";
+};

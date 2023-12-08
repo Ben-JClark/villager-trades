@@ -1,56 +1,53 @@
 import { useState } from "react";
+import { TradingItem } from "../types/types";
 import Header from "./Header";
-import Content from "./VillagerList/VillagerListContainer";
-import FilterContainer from "./Filter/FilterContainer";
+import VillagerListContainer from "./VillagerList/VillagerListContainer";
+import FilterPresentation from "./Filter/FilterPresentation";
 
 function App() {
-  // A whiteList used to show villagers and trades involving the item
-  const [whiteListGiving, setwhiteListGiving] = useState<string[]>([]);
-  const [whiteListWanted, setwhiteListWanted] = useState<string[]>([]);
+  // A whiteList of Villagers to display
+  const [whiteList, setwhiteList] = useState<TradingItem[]>([]);
 
-  // Add an item to the whitelist
-  const whiteListItem = (
-    whitelistItem: string,
-    direction: "wanted" | "giving"
-  ) => {
-    if (direction === "giving") {
-      const whiteList: string[] = [...whiteListGiving, whitelistItem];
-      setwhiteListGiving(whiteList);
-    } else {
-      const whiteList: string[] = [...whiteListWanted, whitelistItem];
-      setwhiteListWanted(whiteList);
-    }
+  /**
+   * Adds an array of TradingItem to the whiteList
+   * @param tradingItems An array of TradingItem to be added to the whiteList
+   */
+  const whiteListItems = (tradingItems: TradingItem[]) => {
+    const newWhiteList: TradingItem[] = [...whiteList, ...tradingItems];
+    setwhiteList(newWhiteList);
   };
 
-  // Remove an item from the whitelist
-  const blackListItem = (
-    blacklistItem: string,
-    direction: "wanted" | "giving"
-  ) => {
-    if (direction === "giving") {
-      const whiteList: string[] = whiteListGiving.filter((item) => {
-        if (item !== blacklistItem) return true;
-      });
-      setwhiteListGiving(whiteList);
-    } else {
-      const whiteList: string[] = whiteListWanted.filter((item) => {
-        if (item !== blacklistItem) return true;
-      });
-      setwhiteListWanted(whiteList);
-    }
+  /**
+   * Removes an array of TradingItem from the whiteList
+   * @param blackItems An array of TradingItem that are to be removed from the whitelist
+   */
+  const blackListItems = (blackItems: TradingItem[]) => {
+    // Make a new whitelist without the blacklisted items
+    const newWhiteList: TradingItem[] = whiteList.filter(
+      (whiteItem: TradingItem) => {
+        // Check if this whitelisted item is in the blacklist
+        const itemIsBlacklisted = blackItems.some((blackItem: TradingItem) => {
+          if (
+            blackItem.name === whiteItem.name &&
+            blackItem.direction === whiteItem.direction
+          )
+            return true;
+        });
+        // Return false if the whitelist item is in the blacklist so it gets filterd out
+        return !itemIsBlacklisted;
+      }
+    );
+    setwhiteList(newWhiteList);
   };
 
   return (
     <>
       <Header />
-      <FilterContainer
-        whiteListItem={whiteListItem}
-        blackListItem={blackListItem}
+      <FilterPresentation
+        whiteListItems={whiteListItems}
+        blackListItems={blackListItems}
       />
-      <Content
-        whiteListGiving={whiteListGiving}
-        whiteListWanted={whiteListWanted}
-      />
+      <VillagerListContainer whiteList={whiteList} />
     </>
   );
 }

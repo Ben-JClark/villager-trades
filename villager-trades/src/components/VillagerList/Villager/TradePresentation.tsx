@@ -8,8 +8,6 @@ interface Props {
 }
 
 function TradePresentation({ tradeArray, profession }: Props) {
-  console.log("displaying trades");
-  console.log(tradeArray);
   return (
     <>
       {

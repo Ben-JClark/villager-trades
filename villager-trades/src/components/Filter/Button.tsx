@@ -1,17 +1,18 @@
 import { useState } from "react";
+import { TradingItem } from "../../types/types";
 
 interface Props {
-  item: string;
-  direction: "wanted" | "giving";
-  whiteListItem: (item: string, direction: "wanted" | "giving") => void;
-  blackListItem: (item: string, direction: "wanted" | "giving") => void;
+  imageSrc: string;
+  tradingItems: TradingItem[];
+  whiteListItems: (tradingItems: TradingItem[]) => void;
+  blackListItems: (tradingItems: TradingItem[]) => void;
 }
 
 function FilterButton({
-  item,
-  direction,
-  whiteListItem,
-  blackListItem,
+  imageSrc,
+  tradingItems,
+  whiteListItems,
+  blackListItems,
 }: Props) {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
@@ -19,51 +20,35 @@ function FilterButton({
     const checked: boolean = !isChecked;
     setIsChecked(checked);
     if (checked) {
-      whiteListItem(item, direction);
+      whiteListItems(tradingItems);
     } else {
-      blackListItem(item, direction);
+      blackListItems(tradingItems);
     }
   };
+
+  const id = "2" + tradingItems[0]?.name + tradingItems[0]?.direction;
 
   return (
     <>
       <input
         type="checkbox"
         className="btn-check"
-        id={direction + item}
+        id={id}
         autoComplete="off"
         onChange={() => {
           onChange();
         }}
       />
-      <label
-        className="btn btn-outline-success py-0 px-0"
-        htmlFor={direction + item}
-      >
+      <label className="btn btn-outline-success py-0 px-0" htmlFor={id}>
         <img
-          src={getItemSrc(item)}
+          src={imageSrc}
           className="img-fluid"
           style={{ width: "30px" }}
-          alt={item}
+          alt={imageSrc}
         />
       </label>
     </>
   );
 }
 
-/**
- * Takes an item name and returns the filepath of the item in the public directory
- * @param item the name of the item
- * @returns the public directory filepath to the image
- */
-function getItemSrc(item: string): string {
-  let src: string;
-  src = item.toLowerCase();
-  // Replace all spaces
-  src = src.replace(/ /g, "-");
-  src = "./items/" + src + ".png";
-  return src;
-}
-
-export { getItemSrc };
 export default FilterButton;

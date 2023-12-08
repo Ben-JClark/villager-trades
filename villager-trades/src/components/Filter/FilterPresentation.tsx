@@ -1,37 +1,30 @@
 import Button from "./Button";
+import { TradingItem } from "../../types/types";
 
 interface Props {
-  direction: "wanted" | "giving";
-  itemArray: string[];
-  whiteListItem: (item: string, direction: "wanted" | "giving") => void;
-  blackListItem: (item: string, direction: "wanted" | "giving") => void;
+  whiteListItems: (tradingItems: TradingItem[]) => void;
+  blackListItems: (tradingItems: TradingItem[]) => void;
 }
 
-function FilterItems({
-  direction,
-  itemArray,
-  whiteListItem,
-  blackListItem,
-}: Props) {
+function FilterPresentation({ whiteListItems, blackListItems }: Props) {
+  const option1: TradingItem[] = [
+    { name: "Diamond Axe", direction: "giving" },
+    { name: "Diamond Shovel", direction: "giving" },
+  ];
+
   return (
     <>
       <div className="row border border-secondary">
-        <div className="col-sm-1">Trades {direction}</div>
+        <div className="col-sm-1">Buying:</div>
         <div className="col">
           <div className="row">
-            {/* <div className="d-flex flex-wrap"> */}
             <div className="form-check form-check-inline">
-              {/* item 1 */}
-              {itemArray.map((item: string) => (
-                <div key={"1" + direction + item} className="form-check-inline">
-                  <Button
-                    item={item}
-                    direction={direction}
-                    whiteListItem={whiteListItem}
-                    blackListItem={blackListItem}
-                  />
-                </div>
-              ))}
+              <Button
+                imageSrc=".\items\diamond-pickaxe.png"
+                tradingItems={option1}
+                whiteListItems={whiteListItems}
+                blackListItems={blackListItems}
+              />
             </div>
           </div>
         </div>
@@ -40,4 +33,4 @@ function FilterItems({
   );
 }
 
-export default FilterItems;
+export default FilterPresentation;

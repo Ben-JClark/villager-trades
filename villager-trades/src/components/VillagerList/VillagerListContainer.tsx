@@ -1,32 +1,29 @@
 import VillagerListPresentation from "./VillagerListPresentation";
 import { useEffect, useState } from "react";
 import { Villager, Level, Trade } from "../../types/types";
+import { TradingItem } from "../../types/types";
 
 interface Props {
-  whiteListGiving: string[];
-  whiteListWanted: string[];
+  whiteList: TradingItem[];
 }
 
-function VillagerListContainer({ whiteListWanted, whiteListGiving }: Props) {
+function VillagerListContainer({ whiteList }: Props) {
   // All villagers and their trades
-  const [entireVillagerArray, setEntireVillagerArray] = useState<Villager[]>(
-    []
-  );
+  const [allVillagers, setAllVillagers] = useState<Villager[]>([]);
 
   // Villagers and trades passing the filter
-  const [filteredVillagerArray, setFilteredVillagerArray] = useState<
-    Villager[]
-  >([]);
+  const [filteredVillagers, setFilteredVillagers] = useState<Villager[]>([]);
 
-  // Map all villagers in villager-data.json to entireVillagerArray
+  /**
+   * Map all villagers in villager-data.json to the hook allVillagers
+   */
   useEffect(() => {
     const getVillagerData = async () => {
       try {
         const response = await fetch("/villager-data.json"); // fetch from public directory
-        const villagerData = await response.json();
+        const data = await response.json();
 
-        //entireVillagerArray.push(
-        const readInVillagerData = villagerData.map((villager: Villager) => {
+        const villagerData = data.map((villager: Villager) => {
           return {
             profession: villager.profession,
             workstation: villager.workstation,
@@ -49,7 +46,7 @@ function VillagerListContainer({ whiteListWanted, whiteListGiving }: Props) {
           };
         });
 
-        setEntireVillagerArray(readInVillagerData);
+        setAllVillagers(villagerData);
         console.log("Fetched villager data");
       } catch (error) {
         console.error("Error getting villager data: ", error);
@@ -59,10 +56,12 @@ function VillagerListContainer({ whiteListWanted, whiteListGiving }: Props) {
     getVillagerData();
   }, []);
 
-  // Apply the filter to entireVillagerArray
+  /**
+   * Use the whiteList to filter out items in allVillagers and store it in filteredVillagers
+   */
   const ApplyFilter = () => {
-    // Create a deep copy of entireVillagerArray
-    let currVillagerArray: Villager[] = entireVillagerArray.map(
+    // Create a deep copy of allVillagers
+    let currVillagerArray: Villager[] = allVillagers.map(
       (villager: Villager) => ({
         ...villager,
         levels: [
@@ -78,22 +77,32 @@ function VillagerListContainer({ whiteListWanted, whiteListGiving }: Props) {
       })
     );
 
-    // Filter each villagers trades
+    // Use the whitelist to filter each villagers trades
     currVillagerArray.forEach((villager: Villager) => {
       villager.levels.forEach((level: Level) => {
         const filteredTradeArray: Trade[] = level.trades.filter(
           (trade: Trade) => {
-            // Check if the trade has a whitelisted giving or taking item
-            const givingMatch = whiteListGiving.some(
-              (whiteListItem: string) => {
-                if (whiteListItem === trade.itemGiven) return true;
+            // Check if the item given in the trade is in the whitelist
+            const givingMatch: boolean = whiteList.some(
+              (whiteListItem: TradingItem) => {
+                if (
+                  whiteListItem.direction === "giving" &&
+                  whiteListItem.name === trade.itemGiven
+                )
+                  return true;
               }
             );
-            const wantedMatch = whiteListWanted.some(
-              (whiteListItem: string) => {
-                if (whiteListItem === trade.itemWanted) return true;
+            // Check if the item Wanted in the trade is in the whitelist
+            const wantedMatch: boolean = whiteList.some(
+              (whiteListItem: TradingItem) => {
+                if (
+                  whiteListItem.direction === "wanted" &&
+                  whiteListItem.name === trade.itemWanted
+                )
+                  return true;
               }
             );
+            // If the Item wanted or given in the trade is in the whitelist, return true
             return givingMatch || wantedMatch;
           }
         );
@@ -114,17 +123,17 @@ function VillagerListContainer({ whiteListWanted, whiteListGiving }: Props) {
     currVillagerArray = currVillagerArray.filter((villager: Villager) => {
       return villager.levels.length > 0;
     });
-    setFilteredVillagerArray(currVillagerArray);
+    setFilteredVillagers(currVillagerArray);
     console.log("Filltered out villagers and their trades");
   };
 
-  // Only call ApplyFilter when the user clicks a filter button
+  // Only call ApplyFilter when the whiteList changes
   useEffect(() => {
-    if (entireVillagerArray.length > 0) ApplyFilter();
-  }, [whiteListWanted, whiteListGiving]);
+    if (allVillagers.length > 0) ApplyFilter();
+  }, [whiteList]);
 
   // Display all the villagers with the filter applied
-  return <VillagerListPresentation villagers={filteredVillagerArray} />;
+  return <VillagerListPresentation villagers={filteredVillagers} />;
 }
 
 export default VillagerListContainer;
