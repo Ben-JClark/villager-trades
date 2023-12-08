@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./Header";
-import Content from "./Content";
-import Filter from "./Filter";
+import Content from "./VillagerList/VillagerListContainer";
+import FilterContainer from "./Filter/FilterContainer";
 
 function App() {
   // A whiteList used to show villagers and trades involving the item
@@ -43,7 +43,10 @@ function App() {
   return (
     <>
       <Header />
-      <Filter whiteListItem={whiteListItem} blackListItem={blackListItem} />
+      <FilterContainer
+        whiteListItem={whiteListItem}
+        blackListItem={blackListItem}
+      />
       <Content
         whiteListGiving={whiteListGiving}
         whiteListWanted={whiteListWanted}

@@ -1,14 +1,11 @@
-import TradeDisplay from "./TradeDisplay";
-import { Villager, Level } from "../types/types";
-import LevelDisplay from "./LevelDisplay";
+import { Villager } from "../../../types/types";
+import LevelPresentation from "./LevelPresentation";
 
 interface Props {
   villager: Villager;
 }
 
-function VillagerDisplay({ villager }: Props) {
-  console.log("displaying villager");
-  console.log(villager);
+function VillagerPresentation({ villager }: Props) {
   return (
     <>
       {/* VillagerContent */}
@@ -42,7 +39,7 @@ function VillagerDisplay({ villager }: Props) {
         {/*  */}
         {/* Display the list of trades */}
         <div className="col-sm-9">
-          <LevelDisplay
+          <LevelPresentation
             profession={villager.profession}
             levels={villager.levels}
           />
@@ -76,4 +73,4 @@ function getVillagerSrc(profession: string): string {
   return src;
 }
 
-export default VillagerDisplay;
+export default VillagerPresentation;

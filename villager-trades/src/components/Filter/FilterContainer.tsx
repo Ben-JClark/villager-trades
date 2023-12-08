@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import FilterItems from "./FilterItems";
+import FilterPresentation from "./FilterPresentation";
 
 interface Props {
   whiteListItem: (item: string, direction: "wanted" | "giving") => void;
@@ -41,13 +41,13 @@ function Filter({ whiteListItem, blackListItem }: Props) {
 
   return (
     <>
-      <FilterItems
+      <FilterPresentation
         whiteListItem={whiteListItem}
         blackListItem={blackListItem}
         direction={"wanted"}
         itemArray={itemsTakingArray}
       />
-      <FilterItems
+      <FilterPresentation
         whiteListItem={whiteListItem}
         blackListItem={blackListItem}
         direction={"giving"}

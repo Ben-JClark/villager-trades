@@ -1,17 +1,22 @@
-import VillagerDisplay from "./VillagerDisplay";
+import VillagerListPresentation from "./VillagerListPresentation";
 import { useEffect, useState } from "react";
-import { Villager, Level, Trade } from "../types/types";
+import { Villager, Level, Trade } from "../../types/types";
 
 interface Props {
   whiteListGiving: string[];
   whiteListWanted: string[];
 }
 
-function Content({ whiteListWanted, whiteListGiving }: Props) {
-  // State storing the villager array read in
+function VillagerListContainer({ whiteListWanted, whiteListGiving }: Props) {
+  // All villagers and their trades
   const [entireVillagerArray, setEntireVillagerArray] = useState<Villager[]>(
     []
   );
+
+  // Villagers and trades passing the filter
+  const [filteredVillagerArray, setFilteredVillagerArray] = useState<
+    Villager[]
+  >([]);
 
   // Map all villagers in villager-data.json to entireVillagerArray
   useEffect(() => {
@@ -45,8 +50,7 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
         });
 
         setEntireVillagerArray(readInVillagerData);
-        console.log("Fetched villager data: ");
-        console.log(readInVillagerData);
+        console.log("Fetched villager data");
       } catch (error) {
         console.error("Error getting villager data: ", error);
       }
@@ -55,11 +59,7 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
     getVillagerData();
   }, []);
 
-  // An array of the filtered villagers and their filtered trades
-  const [filteredVillagerArray, setFilteredVillagerArray] = useState<
-    Villager[]
-  >([]);
-
+  // Apply the filter to entireVillagerArray
   const ApplyFilter = () => {
     // Create a deep copy of entireVillagerArray
     let currVillagerArray: Villager[] = entireVillagerArray.map(
@@ -97,8 +97,6 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
             return givingMatch || wantedMatch;
           }
         );
-        console.log("Filltered each villagers trades");
-        console.log(filteredTradeArray);
         level.trades = [...filteredTradeArray];
       });
     });
@@ -109,9 +107,6 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
         return level.trades.length > 0;
       });
 
-      console.log("Filltered each villagers levels");
-      console.log(filteredLevels);
-
       villager.levels = [...filteredLevels];
     });
 
@@ -120,8 +115,7 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
       return villager.levels.length > 0;
     });
     setFilteredVillagerArray(currVillagerArray);
-    console.log("Final filtered villager array");
-    console.log(currVillagerArray);
+    console.log("Filltered out villagers and their trades");
   };
 
   // Only call ApplyFilter when the user clicks a filter button
@@ -129,18 +123,8 @@ function Content({ whiteListWanted, whiteListGiving }: Props) {
     if (entireVillagerArray.length > 0) ApplyFilter();
   }, [whiteListWanted, whiteListGiving]);
 
-  return (
-    <div className="row border border-secondary">
-      {
-        /* Display all the villagers in villagerData */
-        filteredVillagerArray.map((villager: Villager) => (
-          <div key={villager.profession} className="col-md-4">
-            <VillagerDisplay villager={villager} />
-          </div>
-        ))
-      }
-    </div>
-  );
+  // Display all the villagers with the filter applied
+  return <VillagerListPresentation villagers={filteredVillagerArray} />;
 }
 
-export default Content;
+export default VillagerListContainer;
