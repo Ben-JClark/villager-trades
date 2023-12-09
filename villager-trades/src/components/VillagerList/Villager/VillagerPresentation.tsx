@@ -9,7 +9,7 @@ function VillagerPresentation({ villager }: Props) {
   return (
     <>
       {/* VillagerContent */}
-      <div className="row">
+      <div className="row mb-3">
         {/* Villager col */}
         <div className="col-sm-3">
           {/* Villgaer image row */}

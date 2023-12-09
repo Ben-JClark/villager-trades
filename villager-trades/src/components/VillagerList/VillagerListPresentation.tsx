@@ -7,7 +7,7 @@ interface Props {
 
 function VillagerListPresentation({ villagers }: Props) {
   return (
-    <div className="row border border-secondary">
+    <div className="row">
       {villagers.map((villager: Villager) => (
         <div key={villager.profession} className="col-md-4">
           <VillagerPresentation villager={villager} />

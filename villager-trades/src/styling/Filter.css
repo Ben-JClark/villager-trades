@@ -1,0 +1,16 @@
+@font-face {
+  font-family: minecraft-regular;
+  src: url("./fonts/minecraft-regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.left-filter-style {
+  text-align: right;
+}
+
+.filter-style {
+  font-family: minecraft-regular, sans-serif;
+  font-size: large;
+  text-align: right;
+}

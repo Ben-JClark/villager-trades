@@ -1,5 +1,6 @@
 import Button from "./Button";
 import { TradingItem, FilterOption } from "../../types/types";
+import "../../styling/Filter.css";
 
 interface Props {
   filterOptions: FilterOption[];
@@ -35,21 +36,25 @@ function FilterPresentation({
     console.log("displaying filters");
     return (
       <>
-        <div className="row border border-secondary">
+        <div className="row mb-4">
           {/* Display the left "Show Everything" filter button */}
-          <div className="col-sm-2">
-            <Button
-              buttonId={"2" + leftFilter.name}
-              imageSrc={getImageSrc(leftFilter.name)}
-              tradingItems={leftFilter.tradingItems}
-              whiteListItems={whiteListItems}
-              blackListItems={blackListItems}
-            />
+          <div className="col-sm-1">
+            <div className="left-filter-style">
+              <Button
+                buttonId={"2" + leftFilter.name}
+                imageSrc={getImageSrc(leftFilter.name)}
+                tradingItems={leftFilter.tradingItems}
+                whiteListItems={whiteListItems}
+                blackListItems={blackListItems}
+              />
+            </div>
           </div>
-          <div className="col-sm-7">
+          <div className="col-sm-11">
             {/* Display the top row of filter buttons*/}
-            <div className="row">
-              <div className="col-sm-4">Show Villagers Giving</div>
+            <div className="row mb-3">
+              <div className="col-sm-4 filter-style">
+                Show Villagers Selling
+              </div>
               {topFilters.map((filterOption: FilterOption) => (
                 <div key={"1" + filterOption.name} className="col-sm-2">
                   <Button
@@ -64,7 +69,7 @@ function FilterPresentation({
             </div>
             {/* Display the bottem row of filter buttons*/}
             <div className="row">
-              <div className="col-sm-4">Show Villagers Wanting</div>
+              <div className="col-sm-4 filter-style">Show Villagers Buying</div>
               {bottemFilters.map((filterOption: FilterOption) => (
                 <div key={"1" + filterOption.name} className="col-sm-2">
                   <Button
@@ -91,7 +96,7 @@ function getImageSrc(item: string): string {
   src = item.toLowerCase();
   // Replace all spaces
   src = src.replace(/ /g, "-");
-  src = "./items/" + src + ".png";
+  src = "./filter/" + src + ".gif";
   return src;
 }
 

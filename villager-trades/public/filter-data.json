@@ -18,7 +18,20 @@
     "tradingItems": [
       { "name": "Stone Axe", "direction": "giving" },
       { "name": "Stone Pickaxe", "direction": "giving" },
-      { "name": "Stone Shovel", "direction": "giving" }
+      { "name": "Stone Shovel", "direction": "giving" },
+      { "name": "Stone Hoe", "direction": "giving" },
+      { "name": "Iron Axe", "direction": "giving" },
+      { "name": "Iron Pickaxe", "direction": "giving" },
+      { "name": "Iron Shovel", "direction": "giving" },
+      { "name": "Diamond Axe", "direction": "giving" },
+      { "name": "Diamond Pickaxe", "direction": "giving" },
+      { "name": "Diamond Shovel", "direction": "giving" },
+      { "name": "Diamond Hoe", "direction": "giving" },
+      { "name": "Cod Bucket", "direction": "giving" },
+      { "name": "Shears", "direction": "giving" },
+      { "name": "Name Tag", "direction": "giving" },
+      { "name": "Saddle", "direction": "giving" },
+      { "name": "Ender Pearl", "direction": "giving" }
     ]
   },
   {
@@ -69,5 +82,63 @@
     "name": "Emeralds",
     "position": "bottem",
     "tradingItems": [{ "name": "Emerald", "direction": "wanted" }]
+  },
+  {
+    "name": "Crops",
+    "position": "bottem",
+    "tradingItems": [
+      { "name": "Wheat", "direction": "wanted" },
+      { "name": "Potato", "direction": "wanted" },
+      { "name": "Carrot", "direction": "wanted" },
+      { "name": "Beetroot", "direction": "wanted" },
+      { "name": "Pumpkin", "direction": "wanted" },
+      { "name": "Melon", "direction": "wanted" },
+      { "name": "Kelp Block", "direction": "wanted" },
+      { "name": "Sweet Berries", "direction": "wanted" },
+      { "name": "Nether Wart", "direction": "wanted" }
+    ]
+  },
+  {
+    "name": "Mob Drops",
+    "position": "bottem",
+    "tradingItems": [
+      { "name": "Rotten Flesh", "direction": "wanted" },
+      { "name": "Rabbit Foot", "direction": "wanted" },
+      { "name": "Scute", "direction": "wanted" },
+      { "name": "Raw Chicken", "direction": "wanted" },
+      { "name": "Raw Porkchop", "direction": "wanted" },
+      { "name": "Raw Rabbit", "direction": "wanted" },
+      { "name": "Raw Mutton", "direction": "wanted" },
+      { "name": "Raw Beef", "direction": "wanted" },
+      { "name": "String", "direction": "wanted" },
+      { "name": "Raw Cod", "direction": "wanted" },
+      { "name": "Raw Salmon", "direction": "wanted" },
+      { "name": "Tropical Fish", "direction": "wanted" },
+      { "name": "Pufferfish", "direction": "wanted" },
+      { "name": "Feather", "direction": "wanted" },
+      { "name": "Leather", "direction": "wanted" },
+      { "name": "Rabbit Hide", "direction": "wanted" },
+      { "name": "White Wool", "direction": "wanted" },
+      { "name": "Brown Wool", "direction": "wanted" },
+      { "name": "Black Wool", "direction": "wanted" },
+      { "name": "Gray Wool", "direction": "wanted" }
+    ]
+  },
+  {
+    "name": "Mined Resources",
+    "position": "bottem",
+    "tradingItems": [
+      { "name": "Coal", "direction": "wanted" },
+      { "name": "Flint", "direction": "wanted" },
+      { "name": "Iron Ingot", "direction": "wanted" },
+      { "name": "Gold Ingot", "direction": "wanted" },
+      { "name": "Diamond", "direction": "wanted" },
+      { "name": "Clay Ball", "direction": "wanted" },
+      { "name": "Stone", "direction": "wanted" },
+      { "name": "Granite", "direction": "wanted" },
+      { "name": "Andersite", "direction": "wanted" },
+      { "name": "Diorite", "direction": "wanted" },
+      { "name": "Nether Quartz", "direction": "wanted" }
+    ]
   }
 ]
