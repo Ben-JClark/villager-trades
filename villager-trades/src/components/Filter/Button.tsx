@@ -2,6 +2,7 @@ import { useState } from "react";
 import { TradingItem } from "../../types/types";
 
 interface Props {
+  buttonId: string;
   imageSrc: string;
   tradingItems: TradingItem[];
   whiteListItems: (tradingItems: TradingItem[]) => void;
@@ -9,6 +10,7 @@ interface Props {
 }
 
 function FilterButton({
+  buttonId,
   imageSrc,
   tradingItems,
   whiteListItems,
@@ -26,20 +28,18 @@ function FilterButton({
     }
   };
 
-  const id = "2" + tradingItems[0]?.name + tradingItems[0]?.direction;
-
   return (
     <>
       <input
         type="checkbox"
         className="btn-check"
-        id={id}
+        id={buttonId}
         autoComplete="off"
         onChange={() => {
           onChange();
         }}
       />
-      <label className="btn btn-outline-success py-0 px-0" htmlFor={id}>
+      <label className="btn btn-outline-success py-0 px-0" htmlFor={buttonId}>
         <img
           src={imageSrc}
           className="img-fluid"

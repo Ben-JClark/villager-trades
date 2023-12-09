@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TradingItem } from "../types/types";
 import Header from "./Header";
 import VillagerListContainer from "./VillagerList/VillagerListContainer";
-import FilterPresentation from "./Filter/FilterPresentation";
+import FilterContainer from "./Filter/FilterContainer";
 
 function App() {
   // A whiteList of Villagers to display
@@ -43,7 +43,7 @@ function App() {
   return (
     <>
       <Header />
-      <FilterPresentation
+      <FilterContainer
         whiteListItems={whiteListItems}
         blackListItems={blackListItems}
       />

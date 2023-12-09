@@ -31,3 +31,9 @@ export type TradingItem = {
   name: string;
   direction: "wanted" | "giving";
 };
+
+export type FilterOption = {
+  name: string;
+  position: "left" | "top" | "bottem";
+  tradingItems: TradingItem[];
+};

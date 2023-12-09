@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Show Everything",
+    "position": "left",
+    "tradingItems": [
+      { "name": "Emerald", "direction": "giving" },
+      { "name": "Emerald", "direction": "wanted" }
+    ]
+  },
+  {
+    "name": "Emeralds",
+    "position": "top",
+    "tradingItems": [{ "name": "Emerald", "direction": "giving" }]
+  },
+  {
+    "name": "Tools and Utilities",
+    "position": "top",
+    "tradingItems": [
+      { "name": "Stone Axe", "direction": "giving" },
+      { "name": "Stone Pickaxe", "direction": "giving" },
+      { "name": "Stone Shovel", "direction": "giving" }
+    ]
+  },
+  {
+    "name": "Food",
+    "position": "top",
+    "tradingItems": [
+      { "name": "Cooked Cod", "direction": "giving" },
+      { "name": "Cooked Salmon", "direction": "giving" },
+      { "name": "Bread", "direction": "giving" },
+      { "name": "Pumpkin Pie", "direction": "giving" },
+      { "name": "Apple", "direction": "giving" },
+      { "name": "Cookie", "direction": "giving" },
+      { "name": "Cake", "direction": "giving" },
+      { "name": "Suspicous Stew", "direction": "giving" },
+      { "name": "Golden Carrot", "direction": "giving" },
+      { "name": "Glistening Melon", "direction": "giving" },
+      { "name": "Rabbit Stew", "direction": "giving" },
+      { "name": "Cooked Chicken", "direction": "giving" },
+      { "name": "Cooked Porkchop", "direction": "giving" }
+    ]
+  },
+  {
+    "name": "Combat",
+    "position": "top",
+    "tradingItems": [
+      { "name": "Iron Sword", "direction": "giving" },
+      { "name": "Diamond Sword", "direction": "giving" },
+      { "name": "Bow", "direction": "giving" },
+      { "name": "Crossbow", "direction": "giving" },
+      { "name": "Arrow", "direction": "giving" },
+      { "name": "Tipped Arrow", "direction": "giving" },
+      { "name": "Coloured Leather Cap", "direction": "giving" },
+      { "name": "Coloured Leather Tunic", "direction": "giving" },
+      { "name": "Coloured Leather Pants", "direction": "giving" },
+      { "name": "Coloured Leather Boots", "direction": "giving" },
+      { "name": "Iron Helmate", "direction": "giving" },
+      { "name": "Iron Chestplate", "direction": "giving" },
+      { "name": "Iron Leggings", "direction": "giving" },
+      { "name": "Iron Boots", "direction": "giving" },
+      { "name": "Diamond Helmate", "direction": "giving" },
+      { "name": "Diamond Chestplate", "direction": "giving" },
+      { "name": "Diamond Leggings", "direction": "giving" },
+      { "name": "Dimaond Boots", "direction": "giving" },
+      { "name": "Shield", "direction": "giving" }
+    ]
+  },
+  {
+    "name": "Emeralds",
+    "position": "bottem",
+    "tradingItems": [{ "name": "Emerald", "direction": "wanted" }]
+  }
+]
