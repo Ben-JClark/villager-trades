@@ -3,15 +3,15 @@ import { TradingItem } from "../../types/types";
 
 interface Props {
   buttonId: string;
-  imageSrc: string;
+  name: string;
   tradingItems: TradingItem[];
   whiteListItems: (tradingItems: TradingItem[]) => void;
   blackListItems: (tradingItems: TradingItem[]) => void;
 }
 
-function FilterButton({
+function Button({
   buttonId,
-  imageSrc,
+  name,
   tradingItems,
   whiteListItems,
   blackListItems,
@@ -39,16 +39,29 @@ function FilterButton({
           onChange();
         }}
       />
-      <label className="btn btn-outline-success py-0 px-0" htmlFor={buttonId}>
+      <label
+        className="btn btn-outline-success w-100 h-100 d-flex align-items-center justify-content-center"
+        htmlFor={buttonId}
+      >
         <img
-          src={imageSrc}
+          src={getImageSrc(name)}
           className="img-fluid"
           style={{ width: "30px" }}
-          alt={imageSrc}
+          alt={name}
         />
+        {name}
       </label>
     </>
   );
 }
 
-export default FilterButton;
+function getImageSrc(item: string): string {
+  let src: string;
+  src = item.toLowerCase();
+  // Replace all spaces
+  src = src.replace(/ /g, "-");
+  src = "./filter/" + src + ".gif";
+  return src;
+}
+
+export default Button;

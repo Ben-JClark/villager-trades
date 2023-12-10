@@ -38,18 +38,18 @@ function FilterPresentation({
       <>
         <div className="row mb-4">
           {/* Display the left "Show Everything" filter button */}
-          <div className="col-sm-1">
-            <div className="left-filter-style">
+          <div className="col-sm-2">
+            <div className="left-filter-style w-100 h-100">
               <Button
                 buttonId={"2" + leftFilter.name}
-                imageSrc={getImageSrc(leftFilter.name)}
+                name={leftFilter.name}
                 tradingItems={leftFilter.tradingItems}
                 whiteListItems={whiteListItems}
                 blackListItems={blackListItems}
               />
             </div>
           </div>
-          <div className="col-sm-11">
+          <div className="col-sm-10">
             {/* Display the top row of filter buttons*/}
             <div className="row mb-3">
               <div className="col-sm-4 filter-style">
@@ -59,7 +59,7 @@ function FilterPresentation({
                 <div key={"1" + filterOption.name} className="col-sm-2">
                   <Button
                     buttonId={"3" + filterOption.name}
-                    imageSrc={getImageSrc(filterOption.name)}
+                    name={filterOption.name}
                     tradingItems={filterOption.tradingItems}
                     whiteListItems={whiteListItems}
                     blackListItems={blackListItems}
@@ -74,7 +74,7 @@ function FilterPresentation({
                 <div key={"1" + filterOption.name} className="col-sm-2">
                   <Button
                     buttonId={"4" + filterOption.name}
-                    imageSrc={getImageSrc(filterOption.name)}
+                    name={filterOption.name}
                     tradingItems={filterOption.tradingItems}
                     whiteListItems={whiteListItems}
                     blackListItems={blackListItems}
@@ -89,15 +89,6 @@ function FilterPresentation({
   } else {
     console.log("not displaying filters");
   }
-}
-
-function getImageSrc(item: string): string {
-  let src: string;
-  src = item.toLowerCase();
-  // Replace all spaces
-  src = src.replace(/ /g, "-");
-  src = "./filter/" + src + ".gif";
-  return src;
 }
 
 export default FilterPresentation;
