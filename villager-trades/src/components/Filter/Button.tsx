@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TradingItem } from "../../types/types";
+import "../../styling/Button.css";
 
 interface Props {
   buttonId: string;
@@ -43,13 +44,14 @@ function Button({
         className="btn btn-outline-success w-100 h-100 d-flex align-items-center justify-content-center"
         htmlFor={buttonId}
       >
-        <img
-          src={getImageSrc(name)}
-          className="img-fluid"
-          style={{ width: "30px" }}
-          alt={name}
-        />
-        {name}
+        <div className="row">
+          <div className="col d-flex align-items-center justify-content-center">
+            <img src={getImageSrc(name)} className="image-style" alt={name} />
+          </div>
+          <div className="col text-style d-flex align-items-center justify-content-center">
+            {name}
+          </div>
+        </div>
       </label>
     </>
   );
