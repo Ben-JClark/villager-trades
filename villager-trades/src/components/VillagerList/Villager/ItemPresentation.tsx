@@ -31,7 +31,7 @@ function getItemSrc(item: string, isGif: boolean): string {
   src = item.toLowerCase();
   // Replace all spaces
   src = src.replace(/ /g, "-");
-  src = "./items/" + src;
+  src = "./images/" + src;
   if (isGif) src = src + ".gif";
   else src = src + ".png";
   return src;

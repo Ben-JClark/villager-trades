@@ -64,7 +64,7 @@ function getImageSrc(item: string): string {
   src = item.toLowerCase();
   // Replace all spaces
   src = src.replace(/ /g, "-");
-  src = "./filter/" + src + ".gif";
+  src = "./images/" + src + ".gif";
   return src;
 }
 

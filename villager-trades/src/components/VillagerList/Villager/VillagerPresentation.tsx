@@ -15,20 +15,20 @@ function VillagerPresentation({ villager }: Props) {
           {/* Villgaer image row */}
           <div className="row">
             <img
-              src={getVillagerSrc(villager.profession)}
+              src={getImageSrc(villager.profession, false)}
               className="villager-width"
             ></img>
           </div>
           {/* Stone cutter image row */}
           <div className="row">
             <img
-              src={getWorkstationSrc(villager.workstation)}
+              src={getImageSrc(villager.workstation, false)}
               className="villager-width"
             ></img>
           </div>
           <div className="row">
             <img
-              src={getRecipeSrc(villager.workstation)}
+              src={getImageSrc(villager.workstation, true)}
               className="villager-width"
             ></img>
           </div>
@@ -46,28 +46,30 @@ function VillagerPresentation({ villager }: Props) {
   );
 }
 
-function getRecipeSrc(workstation: string): string {
+function getImageSrc(workstation: string, isRecipe: boolean): string {
   let src: string;
   src = workstation.toLowerCase();
   src = src.replace(" ", "-");
-  src = "./recipes/" + src + "-recipe.webp";
+  src = "./images/" + src;
+  if (isRecipe) src = src + "-recipe.webp";
+  else src = src + ".webp";
   return src;
 }
 
-function getWorkstationSrc(workstation: string): string {
-  let src: string;
-  src = workstation.toLowerCase();
-  src = src.replace(" ", "-");
-  src = "./workstations/" + src + ".webp";
-  return src;
-}
+// function getWorkstationSrc(workstation: string): string {
+//   let src: string;
+//   src = workstation.toLowerCase();
+//   src = src.replace(" ", "-");
+//   src = "../../../assets/images" + src + ".webp";
+//   return src;
+// }
 
-function getVillagerSrc(profession: string): string {
-  let src: string;
-  src = profession.toLowerCase();
-  src = src.replace(" ", "-");
-  src = "./villagers/" + src + ".webp";
-  return src;
-}
+// function getVillagerSrc(profession: string): string {
+//   let src: string;
+//   src = profession.toLowerCase();
+//   src = src.replace(" ", "-");
+//   src = "../../../assets/images" + src + ".webp";
+//   return src;
+// }
 
 export default VillagerPresentation;

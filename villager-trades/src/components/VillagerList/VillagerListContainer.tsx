@@ -20,7 +20,7 @@ function VillagerListContainer({ whiteList }: Props) {
   useEffect(() => {
     const getVillagerData = async () => {
       try {
-        const response = await fetch("/villager-data.json"); // fetch from public directory
+        const response = await fetch("./villager-data.json"); // fetch from public directory
         const data = await response.json();
 
         const villagerData = data.map((villager: Villager) => {

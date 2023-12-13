@@ -41,7 +41,7 @@ function TradePresentation({ tradeArray, profession }: Props) {
             <div className="col-sm-2">
               <img
                 className="trade-image"
-                src={"./gui/trade-arrow.webp"}
+                src={"./images/trade-arrow.webp"}
                 alt={"Right Arrow"}
               ></img>
             </div>
