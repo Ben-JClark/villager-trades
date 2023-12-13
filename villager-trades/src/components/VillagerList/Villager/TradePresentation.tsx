@@ -1,5 +1,5 @@
 import { Trade } from "../../../types/types";
-import "../../../styling/Trade.css";
+import "../../../styling/style.css";
 import ItemPresentation from "./ItemPresentation";
 
 interface Props {
@@ -40,7 +40,7 @@ function TradePresentation({ tradeArray, profession }: Props) {
 
             <div className="col-sm-2">
               <img
-                className="img-fluid img-style"
+                className="trade-image"
                 src={"./gui/trade-arrow.webp"}
                 alt={"Right Arrow"}
               ></img>

@@ -1,4 +1,4 @@
-import "../styling/Header.css";
+import "../styling/style.css";
 
 function Header() {
   return (

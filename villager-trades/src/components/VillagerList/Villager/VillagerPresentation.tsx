@@ -16,23 +16,20 @@ function VillagerPresentation({ villager }: Props) {
           <div className="row">
             <img
               src={getVillagerSrc(villager.profession)}
-              className="img-fluid"
-              style={{ width: "120px" }}
+              className="villager-width"
             ></img>
           </div>
           {/* Stone cutter image row */}
           <div className="row">
             <img
               src={getWorkstationSrc(villager.workstation)}
-              className="img-fluid"
-              style={{ width: "120px" }}
+              className="villager-width"
             ></img>
           </div>
           <div className="row">
             <img
               src={getRecipeSrc(villager.workstation)}
-              className="img-fluid"
-              style={{ width: "120px" }}
+              className="villager-width"
             ></img>
           </div>
         </div>

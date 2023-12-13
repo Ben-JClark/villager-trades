@@ -1,3 +1,5 @@
+import "../../../styling/style.css";
+
 interface Props {
   itemQty: string;
   itemName: string;
@@ -7,7 +9,7 @@ interface Props {
 function ItemPresentation({ itemQty, itemName, isGif }: Props) {
   return (
     <div className="row">
-      <div className="col-sm-7 qty-style">{itemQty}</div>
+      <div className="col-sm-7 item-style">{itemQty}</div>
       <div className="col-sm-5">
         <img
           className="img-style"

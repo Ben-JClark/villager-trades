@@ -1,6 +1,6 @@
 import { Villager } from "../../types/types";
 import VillagerPresentation from "./Villager/VillagerPresentation";
-import "../../styling/Villager.css";
+import "../../styling/style.css";
 
 interface Props {
   villagers: Villager[];

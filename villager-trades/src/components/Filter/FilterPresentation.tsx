@@ -1,6 +1,6 @@
 import Button from "./Button";
 import { TradingItem, FilterOption } from "../../types/types";
-import "../../styling/Filter.css";
+import "../../styling/style.css";
 
 interface Props {
   filterOptions: FilterOption[];
@@ -39,7 +39,7 @@ function FilterPresentation({
         <div className="row">
           {/* Display the top row of filter buttons*/}
           <div className="row mb-3">
-            <div className="col-sm-2 filter-style d-flex align-items-center justify-content-center">
+            <div className="col-sm-2 filter-label align-center">
               Show Villagers Selling
             </div>
             {topFilters.map((filterOption: FilterOption) => (
@@ -56,7 +56,7 @@ function FilterPresentation({
           </div>
           {/* Display the bottem row of filter buttons*/}
           <div className="row mb-3">
-            <div className="col-sm-2 filter-style d-flex align-items-center justify-content-center">
+            <div className="col-sm-2 filter-label align-center">
               Show Villagers Buying
             </div>
             {bottemFilters.map((filterOption: FilterOption) => (
@@ -73,7 +73,7 @@ function FilterPresentation({
           </div>
         </div>
         {/* Display the left "Show Everything" filter button */}
-        <div className="row left-filter-style mb-3">
+        <div className="row left-filter-align mb-3">
           <Button
             buttonId={"2" + leftFilter.name}
             name={leftFilter.name}
