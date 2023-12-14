@@ -5,7 +5,9 @@
 <p>
 Hosted on AWS [http://bensweb.click/villager-trades/](http://bensweb.click/villager-trades/)
 </p>
+<p>
 A site listing villager trades from Minecraft. Users can quickly identify the villagers buying or selling important groups of items.
+</p>
 <p>
 This site is an alternative to the Minecraft Fandom Wiki Trading page, containing only necessary information without advertisements.
 </p>
