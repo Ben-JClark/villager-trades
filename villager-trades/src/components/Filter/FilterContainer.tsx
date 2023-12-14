@@ -7,11 +7,17 @@ interface Props {
   blackListItems: (tradingItems: TradingItem[]) => void;
 }
 
+/**
+ * Fetches and displays the filter buttons
+ * @param {Props} props The functions to add and remove items from the whitelist
+ */
 function Filter({ whiteListItems, blackListItems }: Props) {
-  // An array of item's that trades give
+  // A state that keeps track of the filter buttons to dispaly
   const [filterOptions, setFilterOptions] = useState<FilterOption[]>([]);
 
-  // Read in the filter data
+  /**
+   * Read in the filter json data only when the component mounts
+   */
   useEffect(() => {
     const getFilterTakingData = async () => {
       try {
@@ -26,6 +32,7 @@ function Filter({ whiteListItems, blackListItems }: Props) {
     getFilterTakingData();
   }, []);
 
+  // Display the filter options
   return (
     <>
       <FilterPresentation

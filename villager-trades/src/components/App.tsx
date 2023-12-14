@@ -4,6 +4,9 @@ import Header from "./Header";
 import VillagerListContainer from "./VillagerList/VillagerListContainer";
 import FilterContainer from "./Filter/FilterContainer";
 
+/**
+ * Contains the header, filter options, and villager list
+ */
 function App() {
   // A whiteList of Villagers to display
   const [whiteList, setwhiteList] = useState<TradingItem[]>([]);

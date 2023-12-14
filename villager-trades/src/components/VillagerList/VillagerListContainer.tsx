@@ -7,20 +7,24 @@ interface Props {
   whiteList: TradingItem[];
 }
 
+/**
+ * Fetches and Filteres the list of villagers
+ * @param {Props} props The whitelist
+ */
 function VillagerListContainer({ whiteList }: Props) {
-  // All villagers and their trades
+  // State of every villager and all their trades
   const [allVillagers, setAllVillagers] = useState<Villager[]>([]);
 
-  // Villagers and trades passing the filter
+  // State of the villagers to show
   const [filteredVillagers, setFilteredVillagers] = useState<Villager[]>([]);
 
   /**
-   * Map all villagers in villager-data.json to the hook allVillagers
+   * Only when mounting, fetch and map all villagers in villager-data.json to the hook allVillagers
    */
   useEffect(() => {
     const getVillagerData = async () => {
       try {
-        const response = await fetch("./villager-data.json"); // fetch from public directory
+        const response = await fetch("./villager-data.json");
         const data = await response.json();
 
         const villagerData = data.map((villager: Villager) => {
@@ -57,7 +61,7 @@ function VillagerListContainer({ whiteList }: Props) {
   }, []);
 
   /**
-   * Use the whiteList to filter out items in allVillagers and store it in filteredVillagers
+   * Apply the whiteList to allVillagers and store the filtered result in filteredVillagers
    */
   const ApplyFilter = () => {
     // Create a deep copy of allVillagers
@@ -132,7 +136,6 @@ function VillagerListContainer({ whiteList }: Props) {
     if (allVillagers.length > 0) ApplyFilter();
   }, [whiteList]);
 
-  // Display all the villagers with the filter applied
   return <VillagerListPresentation villagers={filteredVillagers} />;
 }
 

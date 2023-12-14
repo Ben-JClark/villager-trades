@@ -6,6 +6,10 @@ interface Props {
   villagers: Villager[];
 }
 
+/**
+ * Map out each villager into seperate columns
+ * @param {Props} props The villagers to display
+ */
 function VillagerListPresentation({ villagers }: Props) {
   return (
     <div className="row">

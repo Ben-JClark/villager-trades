@@ -7,6 +7,10 @@ interface Props {
   levels: Level[];
 }
 
+/**
+ * Display multiple levels and within each level display the trades for that level
+ * @param {Props} props The levels for a villager
+ */
 function LevelDisplay({ profession, levels }: Props) {
   return (
     <>

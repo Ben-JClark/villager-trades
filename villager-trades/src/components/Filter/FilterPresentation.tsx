@@ -8,14 +8,16 @@ interface Props {
   blackListItems: (tradingItems: TradingItem[]) => void;
 }
 
+/**
+ * Displays all the filter options as buttons
+ * @param {Props} props The differnt filter options and the functions to add and remove items from the whitelist
+ */
 function FilterPresentation({
   filterOptions,
   whiteListItems,
   blackListItems,
 }: Props) {
-  console.log(filterOptions);
-
-  // Seperate the FilterOptions into seperate arrays variables on their positon
+  // Seperate the filter options into seperate arrays based on their position on the page
 
   const leftFilter: FilterOption | undefined = filterOptions.find(
     (filterOption) => {
@@ -31,13 +33,13 @@ function FilterPresentation({
     if (filterOption.position === "bottem") return true;
   });
 
-  // If the left filter isn't undefined display the filter buttons
+  // Display each FilterOption as a button on the page
   if (leftFilter !== undefined) {
     console.log("displaying filters");
     return (
       <>
         <div className="row">
-          {/* Display the top row of filter buttons*/}
+          {/* Display the top row of filter buttons */}
           <div className="row mb-3">
             <div className="col-sm-2 filter-label align-center">
               Show Villagers Selling
@@ -54,7 +56,7 @@ function FilterPresentation({
               </div>
             ))}
           </div>
-          {/* Display the bottem row of filter buttons*/}
+          {/* Display the bottem row of filter buttons */}
           <div className="row mb-3">
             <div className="col-sm-2 filter-label align-center">
               Show Villagers Buying

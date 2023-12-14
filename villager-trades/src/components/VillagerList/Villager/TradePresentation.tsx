@@ -7,6 +7,10 @@ interface Props {
   tradeArray: Trade[];
 }
 
+/**
+ * Display each trade as a row containing the a trades items and quantities
+ * @param {Props} props The trades to display
+ */
 function TradePresentation({ tradeArray, profession }: Props) {
   return (
     <>
